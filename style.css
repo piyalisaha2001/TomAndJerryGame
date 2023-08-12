@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.tom{
+    background-image: url(Tom.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 330px;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.obstacle{
+    width: 178px;
+    height: 180px;
+    background-image: url(jerry1chez.png);
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 75vw;
+}
+
+.animateTom{
+    animation: tom 0.5s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 2s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-family: 'DynaPuff', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+}
+
+#scoreCount{
+    position: absolute;
+    right: 110px;
+    top: 31px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Preahvihear', sans-serif;
+    color: rgb(38, 35, 38);
+    font-weight: bold;
+}
+
+@keyframes tom{
+    0%{
+          bottom: 0;
+    }
+    50%{
+         bottom: 462px;
+         
+    }
+    100%{
+        bottom: 0;
+    
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+    0%{}
+}
